@@ -104,30 +104,43 @@
                     <ul class="slides">
                       <li>
                         <h1 class="arrow">Responsive Design Specialists</h1>
-                        <?php
-                        $q = isset($_GET['q'])? htmlspecialchars($_GET['q']) : '';
-                        if($q) {
-                                if($q =='RUNOOB') {
-                                        echo '菜鸟教程<br>http://www.runoob.com';
-                                } else if($q =='GOOGLE') {
-                                        echo 'Google 搜索<br>http://www.google.com';
-                                } else if($q =='TAOBAO') {
-                                        echo '淘宝<br>http://www.taobao.com';
-                                }
-                        } else {
-                        ?>
-                        <form action="" method="get"> 
-                            <select name="q">
-                            <option value="">选择一个站点:</option>
-                            <option value="RUNOOB">Runoob</option>
-                            <option value="GOOGLE">Google</option>
-                            <option value="TAOBAO">Taobao</option>
+                        <form action="deal.php" method="post"> 
+                            <select name="year">
+                              <option value="">Year</option>
+                              <option value="2012">2012</option>
+                              <option value="2013">2013</option>
+                              <option value="2014">2014</option>
+                              <option value="2015">2015</option>
+                              <option value="2016">2016</option>
+                              <option value="2017">2017</option>
                             </select>
-                            <input type="submit" value="提交">
+                            <select name="district">
+                              <option value="">District</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="22">22</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                            </select>
+                            <input type="submit" value="submit">
                             </form>
-                        <?php
-                        }
-                        ?>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
                         <p>
                         Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
